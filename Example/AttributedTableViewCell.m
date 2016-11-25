@@ -163,7 +163,7 @@ static inline NSRegularExpression * ParenthesisRegularExpression() {
         
     self.summaryLabel.frame = CGRectOffset(CGRectInset(self.bounds, 20.0f, 5.0f), -10.0f, 0.0f);
     
-    [self setNeedsDisplay];
+    [self setNeedsDisplay];//调用self的drawRect
 }
 
 #pragma mark - UIAccessibilityContainer
